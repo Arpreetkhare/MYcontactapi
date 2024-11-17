@@ -71,10 +71,9 @@
 
 ### Installation With Docker
 
- **Build and run the containers:**
+**Build and run the containers:**
    ```bash
    docker-compose up --build
----
 
    
    
