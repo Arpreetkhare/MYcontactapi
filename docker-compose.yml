@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  mycontactapi:
+    build: .
+    container_name: mycontactapi_container
+    ports:
+      - "5001:5001"  # Expose the app on port 5001
+    volumes:
+      - .:/app
+    environment:
+      - PORT=5001
+      - CONNECTION_STRING=mongodb://mongo:27017/test
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo_container
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - mycontact_network
+
+volumes:
+  mongo_data:
+
+networks:
+  mycontact_network:
+    driver: bridge
