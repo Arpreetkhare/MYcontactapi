@@ -74,6 +74,7 @@
  **Build and run the containers:**
    ```bash
    docker-compose up --build
+---
 
    
    
