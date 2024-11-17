@@ -58,7 +58,7 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/MyContactAPI.git
+   git clone https://github.com/Arpreetkhare/MyContactAPI.git
    cd MyContactAPI
 2. **Install dependencies:**
    ~~~bash
